@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import { Gift } from "lucide-react";
 
 const purchaseData = [
-  { name: "Ani Pujiati", product: "Academic Magic Prompt Gen 03" },
-  { name: "Budi Santoso", product: "Skripsi Killer Prompt Pro" },
-  { name: "Citra Dewi", product: "Tesis Master Bundle" },
-  { name: "Dimas Prasetyo", product: "Academic Magic Prompt Gen 03" },
-  { name: "Eka Putri", product: "Disertasi Expert Pack" },
-  { name: "Fajar Hidayat", product: "Skripsi Killer Prompt Pro" },
-  { name: "Gita Maharani", product: "Academic Magic Prompt Gen 03" },
-  { name: "Hendra Wijaya", product: "Tesis Master Bundle" },
-  { name: "Indah Permata", product: "Academic Magic Prompt Gen 03" },
-  { name: "Joko Susilo", product: "Skripsi Killer Prompt Pro" },
+  { name: "Ani Pujiati", product: "Prompt Sakti Skripsi" },
+  { name: "Budi Santoso", product: "Prompt Sakti Tesis" },
+  { name: "Citra Dewi", product: "Prompt Sakti Disertasi" },
+  { name: "Dimas Prasetyo", product: "Prompt Sakti Skripsi" },
+  { name: "Eka Putri", product: "Prompt Sakti Tesis" },
+  { name: "Fajar Hidayat", product: "Prompt Sakti Disertasi" },
+  { name: "Gita Maharani", product: "Prompt Sakti Skripsi" },
+  { name: "Hendra Wijaya", product: "Prompt Sakti Tesis" },
+  { name: "Indah Permata", product: "Prompt Sakti Disertasi" },
+  { name: "Joko Susilo", product: "Prompt Sakti Skripsi" },
 ];
 
 export const PurchaseNotification = () => {
