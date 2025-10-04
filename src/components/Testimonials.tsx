@@ -69,8 +69,8 @@ export const Testimonials = () => {
                   "{testimonial.content}"
                 </p>
 
-                <div className="border-t border-border pt-4">
-                  <p className="font-semibold text-card-foreground">
+                <div className="mt-4 rounded-lg bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 p-4 border border-primary/20">
+                  <p className="font-semibold text-foreground">
                     {testimonial.name}
                   </p>
                   <p className="text-sm text-muted-foreground">
