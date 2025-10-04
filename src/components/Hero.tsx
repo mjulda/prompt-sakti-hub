@@ -39,16 +39,24 @@ export const Hero = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm text-lg"
-                asChild
-              >
-                <a href="https://drive.google.com/file/d/DEMO_FILE_ID/view" target="_blank" rel="noopener noreferrer">
-                  Demo Gratis
-                </a>
-              </Button>
+              <div className="relative">
+                <div className="mb-3 text-center sm:text-left">
+                  <p className="text-sm text-white/90 font-medium animate-pulse">
+                    Masih ragu membeli Prompt Sakti? <span className="text-primary-glow font-bold">Uji coba gratis</span> terlebih dahulu! 👇
+                  </p>
+                </div>
+                
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm text-lg relative animate-bounce"
+                  asChild
+                >
+                  <a href="https://drive.google.com/file/d/DEMO_FILE_ID/view" target="_blank" rel="noopener noreferrer">
+                    Uji Coba Gratis
+                  </a>
+                </Button>
+              </div>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-6 justify-center lg:justify-start text-white/80 text-sm">
