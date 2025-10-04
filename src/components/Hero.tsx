@@ -28,28 +28,27 @@ export const Hero = () => {
               Legal, cepat, dan sesuai standar akademis kampus Anda.
             </p>
             
-            <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
+            <div className="flex flex-col gap-6 items-center lg:items-start">
               <Button 
                 variant="hero" 
                 size="lg" 
-                className="text-lg"
+                className="text-lg w-full sm:w-auto"
                 onClick={scrollToProducts}
               >
                 Lihat Produk
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
-              <div className="relative">
-                <div className="mb-3 text-center sm:text-left">
-                  <p className="text-sm text-white/90 font-medium animate-pulse">
-                    Masih ragu membeli Prompt Sakti? <span className="text-primary-glow font-bold">Uji coba gratis</span> terlebih dahulu! 👇
+              <div className="w-full sm:w-auto">
+                <div className="mb-3 text-center lg:text-left">
+                  <p className="text-lg text-white font-semibold animate-pulse">
+                    Masih ragu membeli Prompt Sakti? <span className="text-yellow-300 font-bold">Uji coba gratis</span> terlebih dahulu! 👇
                   </p>
                 </div>
                 
                 <Button 
-                  variant="outline" 
                   size="lg" 
-                  className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm text-lg relative animate-bounce"
+                  className="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 hover:from-yellow-300 hover:to-orange-400 border-0 font-bold text-lg shadow-elegant hover:shadow-glow hover:scale-105 transition-all duration-300 animate-bounce w-full sm:w-auto"
                   asChild
                 >
                   <a href="https://drive.google.com/file/d/DEMO_FILE_ID/view" target="_blank" rel="noopener noreferrer">
