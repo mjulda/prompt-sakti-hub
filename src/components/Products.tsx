@@ -172,7 +172,7 @@ export const Products = () => {
               <CardFooter>
                 <Button 
                   className="w-full" 
-                  variant={product.popular ? "hero" : "default"}
+                  variant="default"
                   size="lg"
                   onClick={() => handleBuyClick(product.title)}
                 >

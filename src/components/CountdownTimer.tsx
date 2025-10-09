@@ -38,35 +38,35 @@ export const CountdownTimer = () => {
 
   const TimeBox = ({ value, label }: { value: number; label: string }) => (
     <div className="flex flex-col items-center">
-      <div className="bg-destructive text-destructive-foreground rounded-xl w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center shadow-lg animate-scale-in">
-        <span className="text-3xl sm:text-4xl font-bold">
+      <div className="bg-destructive text-destructive-foreground rounded-lg w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center shadow-md animate-scale-in">
+        <span className="text-2xl sm:text-3xl font-bold">
           {value.toString().padStart(2, "0")}
         </span>
       </div>
-      <span className="text-sm sm:text-base font-semibold mt-2 text-foreground">
+      <span className="text-xs sm:text-sm font-semibold mt-1 text-foreground">
         {label}
       </span>
     </div>
   );
 
   return (
-    <div className="bg-card border-2 border-destructive/20 rounded-2xl p-6 sm:p-8 shadow-xl animate-fade-in">
-      <div className="flex items-center justify-center gap-2 mb-4">
-        <Clock className="h-5 w-5 text-destructive animate-pulse" />
-        <h3 className="text-xl sm:text-2xl font-bold text-center text-destructive">
+    <div className="bg-card border-2 border-destructive/20 rounded-xl p-4 sm:p-6 shadow-lg animate-fade-in">
+      <div className="flex items-center justify-center gap-2 mb-3">
+        <Clock className="h-4 w-4 text-destructive animate-pulse" />
+        <h3 className="text-base sm:text-lg font-bold text-center text-destructive">
           Promo Berakhir dan Harga Kembali Normal dalam waktu:
         </h3>
       </div>
       
-      <div className="flex items-center justify-center gap-4 sm:gap-6">
+      <div className="flex items-center justify-center gap-3 sm:gap-4">
         <TimeBox value={timeLeft.hours} label="Jam" />
-        <span className="text-3xl font-bold text-destructive mb-6">:</span>
+        <span className="text-2xl font-bold text-destructive mb-4">:</span>
         <TimeBox value={timeLeft.minutes} label="Menit" />
-        <span className="text-3xl font-bold text-destructive mb-6">:</span>
+        <span className="text-2xl font-bold text-destructive mb-4">:</span>
         <TimeBox value={timeLeft.seconds} label="Detik" />
       </div>
 
-      <p className="text-center mt-4 text-sm text-muted-foreground">
+      <p className="text-center mt-3 text-xs sm:text-sm text-muted-foreground">
         ⚡ Jangan lewatkan kesempatan hemat hingga 40%!
       </p>
     </div>
