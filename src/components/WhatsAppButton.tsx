@@ -17,7 +17,7 @@ export const WhatsAppButton = () => {
         className="h-16 w-16 rounded-full bg-[#25D366] hover:bg-[#20BA5A] shadow-elegant hover:shadow-glow transition-all duration-300 group-hover:scale-110"
       >
         <svg
-          className="h-9 w-9 text-white fill-current"
+          className="h-11 w-11 text-white fill-current"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
