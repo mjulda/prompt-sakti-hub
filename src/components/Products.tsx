@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Sparkles } from "lucide-react";
 import productIcon from "@/assets/product-icon.jpg";
+import { CountdownTimer } from "./CountdownTimer";
 
 export const Products = () => {
   const products = [
@@ -90,6 +91,10 @@ export const Products = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Semua paket dilengkapi dengan bonus eksklusif GPT Custom untuk memaksimalkan hasil karya ilmiah Anda.
           </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto mb-12">
+          <CountdownTimer />
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
