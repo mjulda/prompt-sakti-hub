@@ -6,11 +6,11 @@ export const WhatsAppButton = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center h-14 w-14 rounded-full bg-[#25D366] hover:bg-[#20BA5A] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center justify-center h-12 w-12 sm:h-14 sm:w-14 rounded-full bg-[#25D366] hover:bg-[#20BA5A] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
       aria-label="Chat WhatsApp"
     >
       <svg
-        className="h-8 w-8 text-white fill-current"
+        className="h-7 w-7 sm:h-8 sm:w-8 text-white fill-current"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
