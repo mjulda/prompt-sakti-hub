@@ -1,5 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Star, Quote } from "lucide-react";
+import testimonialRina from "@/assets/testimonial-rina.jpg";
+import testimonialAhmad from "@/assets/testimonial-ahmad.jpg";
+import testimonialDewi from "@/assets/testimonial-dewi.jpg";
+import testimonialBudi from "@/assets/testimonial-budi.jpg";
+import testimonialSiti from "@/assets/testimonial-siti.jpg";
+import testimonialRangga from "@/assets/testimonial-rangga.jpg";
 
 export const Testimonials = () => {
   const testimonials = [
@@ -7,37 +14,43 @@ export const Testimonials = () => {
       name: "Rina Wulandari",
       role: "Mahasiswa S1 Manajemen - Universitas Indonesia",
       content: "Luar biasa! Skripsi saya yang mandek 6 bulan, selesai dalam 2 minggu dengan Prompt Sakti. Dosen pembimbing pun terkesan dengan kualitas penulisannya. Highly recommended!",
-      rating: 5
+      rating: 5,
+      image: testimonialRina
     },
     {
       name: "Ahmad Fauzi",
       role: "Mahasiswa S2 Teknik Informatika - ITB",
       content: "Sebagai pekerja yang kuliah sambil bekerja, Prompt Sakti sangat membantu. Tesis saya bisa selesai tepat waktu tanpa mengganggu pekerjaan. Worth it banget!",
-      rating: 5
+      rating: 5,
+      image: testimonialAhmad
     },
     {
       name: "Dewi Lestari",
       role: "Mahasiswa S3 Pendidikan - UGM",
       content: "Awalnya ragu dengan produk prompt, tapi setelah coba demo gratisnya langsung yakin. Disertasi saya yang kompleks jadi lebih terstruktur dan mudah dikembangkan. Terima kasih Prompt Sakti!",
-      rating: 5
+      rating: 5,
+      image: testimonialDewi
     },
     {
       name: "Budi Santoso",
       role: "Mahasiswa S1 Akuntansi - Unair",
       content: "Hemat waktu dan biaya! Daripada bayar joki jutaan rupiah, mending pakai Prompt Sakti. Hasilnya malah lebih memuaskan karena saya yang mengerjakannya sendiri dengan panduan yang jelas.",
-      rating: 5
+      rating: 5,
+      image: testimonialBudi
     },
     {
       name: "Siti Nurhaliza",
       role: "Mahasiswa S2 Psikologi - Unpad",
       content: "GPT Custom-nya keren banget! Bikin analisis data kualitatif jadi gampang. Konsultasi gratis juga sangat membantu ketika ada yang bingung. Pelayanan 10/10!",
-      rating: 5
+      rating: 5,
+      image: testimonialSiti
     },
     {
       name: "Rangga Permana",
       role: "Mahasiswa S1 Hukum - Undip",
       content: "Prompt Sakti saved my life! Deadline sidang tinggal 3 minggu, skripsi masih kosong. Alhamdulillah dengan bantuan produk ini, saya bisa lulus tepat waktu. Terima kasih banyak!",
-      rating: 5
+      rating: 5,
+      image: testimonialRangga
     }
   ];
 
@@ -69,13 +82,19 @@ export const Testimonials = () => {
                   "{testimonial.content}"
                 </p>
 
-                <div className="mt-4 rounded-lg bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 p-4 border border-primary/20">
-                  <p className="font-semibold text-foreground">
-                    {testimonial.name}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.role}
-                  </p>
+                <div className="mt-4 rounded-lg bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 p-4 border border-primary/20 flex items-center gap-4">
+                  <Avatar className="h-14 w-14 border-2 border-primary/20">
+                    <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                    <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      {testimonial.role}
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
