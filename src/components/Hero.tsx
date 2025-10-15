@@ -20,7 +20,7 @@ export const Hero = () => {
             </div>
             
             <h1 className="mb-6 text-4xl font-bold text-white lg:text-6xl leading-tight">
-              Selesaikan <span className="text-primary-glow">Skripsi, Tesis & Disertasi</span> dalam Hitungan Menit!
+              Selesaikan <span className="text-yellow-300 font-extrabold">Skripsi, Tesis & Disertasi</span> dalam Hitungan Menit!
             </h1>
             
             <p className="mb-8 text-lg text-white/90 lg:text-xl">
