@@ -75,7 +75,7 @@ export const Bonus = () => {
         <div className="text-center">
           <div className="inline-block rounded-xl bg-gradient-hero p-8 text-white shadow-elegant max-w-2xl">
             <h3 className="text-2xl font-bold mb-3">
-              Total Nilai Bonus: <span className="text-yellow-300 font-extrabold">Rp 2.500.000+</span>
+              Total Nilai Bonus: <span className="text-primary-glow">Rp 2.500.000+</span>
             </h3>
             <p className="text-white/90">
               Semua ini GRATIS untuk Anda! Investasi terbaik untuk masa depan akademis Anda.

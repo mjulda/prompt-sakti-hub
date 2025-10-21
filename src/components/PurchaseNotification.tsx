@@ -47,9 +47,9 @@ export const PurchaseNotification = () => {
 
   return (
     <div
-      className={`fixed top-1/2 left-1/2 -translate-x-1/2 z-50 transform transition-all duration-500 ease-out ${
+      className={`fixed bottom-8 left-8 z-50 transform transition-all duration-500 ease-out ${
         isVisible
-          ? "-translate-y-1/2 opacity-100"
+          ? "translate-y-0 opacity-100"
           : "translate-y-full opacity-0 pointer-events-none"
       }`}
     >
